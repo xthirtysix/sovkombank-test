@@ -1,28 +1,31 @@
-<template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
-  </div>
+<template lang="pug">
+  #app
+    app-filter
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import AppFilter from "./components/AppFilter/AppFilter.vue";
 
 export default {
   name: "App",
   components: {
-    HelloWorld
+    AppFilter
   }
 };
 </script>
 
 <style lang="scss">
+@import "./scss/main.scss";
+
+body {
+  margin: 0;
+}
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "PT Sans", Helvetica, Arial, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  color: #506981;
 }
 </style>
